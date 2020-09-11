@@ -15,7 +15,7 @@ a {
 }
 
 img {
-  /* width: 100%; */
+  width: 100%;
   display: block;
 }
 body {
@@ -31,8 +31,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 50px 0 50px;
-  z-index: 100px;
+  padding: 40px 50px;
+  z-index: 10;
 }
 .logo {
   width: 130px;
@@ -48,8 +48,8 @@ header {
   line-height: 38px;
   border: 1px solid #fff;
   color: #fff;
-  margin-left: 20;
-  transition: background-color 0.3s;
+  margin-left: 20px;
+  transition: background-color 1s;
 }
 .nav a .active .nav a:hover {
   background: #fff;
@@ -58,7 +58,7 @@ header {
 
 /* slide */
 .slide {
-  height: 180vh;
+  height: 100vh;
   background: linear-gradient(
       180deg,
       rgba(250, 234, 234, 0.83) 1.79%,
@@ -85,12 +85,16 @@ header {
   font-weight: 700;
 }
 
+.slide-text p {
+  opacity: 60%;
+}
+
 .social {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 50%;
-  right: 46px;
+  right: 50px;
   transform: translate(-50%);
 }
 
@@ -98,8 +102,10 @@ header {
   display: block;
   width: 40px;
   margin: 30px 0;
-  opacity: background-color 0.3s;
+  opacity: 60%;
+  transition: opacity 0.3s;
 }
 .social a:hover {
   opacity: 100%;
 }
+jj
